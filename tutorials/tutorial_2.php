@@ -1,20 +1,20 @@
 <?php
-$n=6;
-for($i=1;$i<=$n;$i++){
-	for($j=1;$j<=(2*$n)-1;$j++){
-		if($j>=$n-($i-1) && $j<=$n+($i-1)){
+$number = "6";
+for ($row = 1; $row <= $number; $row++) {
+	for ($col = 1; $col <= (2 * $number) - 1; $col++) {
+		if ($col >= $number - ($row - 1) && $col <= $number + ($row - 1)) {
 			echo "*&nbsp;";
-		}else{
+		} else {
 			echo "&nbsp;&nbsp;&nbsp;";
 		}
 	}
 	echo '</br>';
 }
-for($i=$n-1;$i>=1;$i--){
-	for($j=1;$j<=(2*$n)-1;$j++){
-		if($j>=$n-($i-1) && $j<=$n+($i-1)){
+for ($row = $number - 1; $row >= 1; $row--) {
+	for ($col = 1; $col <= (2 * $number) - 1; $col++) {
+		if ($col >= $number - ($row - 1) && $col <= $number + ($row - 1)) {
 			echo "*&nbsp;";
-		}else{
+		} else {
 			echo "&nbsp;&nbsp;&nbsp;";
 		}
 	}
