@@ -9,4 +9,3 @@ else {
     move_uploaded_file ($tmp, "text/$name");
 }
 header("location: index.php");
-?>

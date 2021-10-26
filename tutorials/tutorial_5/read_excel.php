@@ -12,8 +12,6 @@ if ($xlsx = SimpleXLSX::parse('countries_and_population.xlsx')) {
     echo '<table cellpadding="10">
     <tr><td valign="top">';
 
-    // output worsheet 1
-
     $dim = $xlsx->dimension();
     $num_cols = $dim[0];
     $num_rows = $dim[1];
@@ -27,8 +25,6 @@ if ($xlsx = SimpleXLSX::parse('countries_and_population.xlsx')) {
         echo '</tr>';
     }
     echo '</table>';
-
-    // output worsheet 2
 
     $dim = $xlsx->dimension(2);
     $num_cols = $dim[0];

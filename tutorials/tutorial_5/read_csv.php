@@ -15,4 +15,3 @@ if (($handle = fopen("Sample.csv", "r")) !== FALSE) {
     echo "</table>";
     fclose($handle);
 }
-?>
